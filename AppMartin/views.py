@@ -16,6 +16,14 @@ def Cliente2(self):
         texto= f"{clientes.nombre} {clientes.direccion} {clientes.trabajo} {clientes.nacimiento} {clientes.dni}"
         return HttpResponse(texto)
 
+def Inicio(request):
+        return render (request, "AppMartin/inicio.html")
+
+def clientes(request):
+        return render (request, "AppMartin/clientes.html")
+
+def cajeros(request):
+        return render (request, "AppMartin/cajeros.html")
 
 
 
